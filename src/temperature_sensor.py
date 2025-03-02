@@ -1,5 +1,3 @@
-# Aidress's Files
-
 import statistics
 
 def validate_temp(value):
@@ -38,8 +36,8 @@ def process_temperatures(temp_list):
 
     return f"Min: {min_temp}°C, Max: {max_temp}°C, Avg: {avg_temp}°C"
 
-# Ensure script does NOT auto-run when imported
-if __name__ == "__main__":
+def main():
+    """Interactive main function for user input."""
     while True:
         user_input = input("Enter the temperatures separated by a space: ")
         user_temps = user_input.split()
@@ -51,3 +49,6 @@ if __name__ == "__main__":
         if choice == 'no':
             print("\nThank you for using the Temperature Sensor Analysis Tool.\n")
             break
+
+if __name__ == "__main__":
+    main()
