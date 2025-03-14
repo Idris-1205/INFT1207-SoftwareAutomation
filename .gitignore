@@ -1,1 +1,19 @@
+# Ignore system files
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
+
+# Virtual environment
+venv/
+.env
+
+# IDE and editor settings
+.idea/
+.vscode/
+
+# Logs and temp files
+*.log
+
+# Course folder
 INFT1207/
