@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Accessible Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Accessible Web Page</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#maincontent">Main</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="maincontent">
+    <section aria-labelledby="section1-heading">
+      <h2 id="section1-heading">Section One</h2>
+      <p>This is the first section of our accessible webpage.</p>
+      <img src="example_image.jpg" alt="Example image" />
+    </section>
+    <section aria-labelledby="section2-heading">
+      <h2 id="section2-heading">Section Two</h2>
+      <p>This section contains additional content.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025. All Rights Reserved.</p>
+  </footer>
+  <script src="accessible.js"></script>
+</body>
+</html>
